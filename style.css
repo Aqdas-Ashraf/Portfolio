@@ -607,6 +607,13 @@ color:white;
 
 /* VIDEO SECTION */
 
+.video-card iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:20px;
+}
+
 .video-section{
 padding:40px 10%;
 }
