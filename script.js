@@ -401,3 +401,46 @@ document.addEventListener("mousemove",(e)=>{
     preview.style.top = e.clientY + "px";
 
 });
+
+const ytCards = document.querySelectorAll(".video-card");
+
+const ytModal = document.querySelector(".video-modal");
+
+const ytPlayer = document.getElementById("ytplayer");
+
+const ytCloseBtn = document.querySelector(".close-video");
+
+ytCards.forEach(card => {
+
+    card.onclick = () => {
+
+        const id = card.dataset.video;
+
+        ytPlayer.src =
+        `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+
+        ytModal.classList.add("active");
+
+    };
+
+});
+
+ytCloseBtn.onclick = () => {
+
+    ytModal.classList.remove("active");
+
+    ytPlayer.src = "";
+
+};
+
+ytModal.onclick = (e) => {
+
+    if (e.target === ytModal) {
+
+        ytModal.classList.remove("active");
+
+        ytPlayer.src = "";
+
+    }
+
+};
