@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -141,7 +142,6 @@ As a creative video editor and content strategist, I specialize in transforming 
 </section>
 
 <!-- SHORT FORM -->
-
 <section class="video-section">
 
 <h2 class="section-title">
@@ -150,37 +150,50 @@ SHORT FORM
 
 <div class="video-slider">
 
-  <div class="video-card">
-    <iframe
-      src="https://www.youtube.com/embed/S7uD0KQXZUw"
-      allowfullscreen>
-    </iframe>
-  </div>
+    <div class="video-card" data-video="S7uD0KQXZUw">
+        <img src="https://img.youtube.com/vi/S7uD0KQXZUw/maxresdefault.jpg">
+        <div class="play-btn">
+            <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
 
-  <div class="video-card">
-    <iframe
-      src="https://www.youtube.com/embed/WFa55_HdAME"
-      allowfullscreen>
-    </iframe>
-  </div>
+    <div class="video-card" data-video="WFa55_HdAME">
+        <img src="https://img.youtube.com/vi/WFa55_HdAME/maxresdefault.jpg">
+        <div class="play-btn">
+            <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
 
-  <div class="video-card">
-    <iframe
-      src="https://www.youtube.com/embed/s_mZNH1larA"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <div class="video-card">
-    <iframe
-      src="https://www.youtube.com/embed/S7uD0KQXZUw"
-      allowfullscreen>
-    </iframe>
-  </div>
+    <div class="video-card" data-video="s_mZNH1larA">
+        <img src="https://img.youtube.com/vi/s_mZNH1larA/maxresdefault.jpg">
+        <div class="play-btn">
+            <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
 
 </div>
 
 </section>
+
+<!-- Popup -->
+
+<div class="video-modal">
+
+    <div class="close-video">
+        ✕
+    </div>
+
+    <div class="video-frame">
+
+        <iframe
+        id="ytplayer"
+        allowfullscreen
+        allow="autoplay; encrypted-media">
+        </iframe>
+
+    </div>
+
+</div>
 <!-- LONG FORM -->
 
 <section class="video-section">
@@ -254,17 +267,17 @@ creative powerhouse.
 </h2>
 <div class="socials">
 
-<a href="https://x.com/AQDASASHRA71755" class="social">
+<a href="#" class="social">
     <span><i class="fab fa-twitter"></i> Twitter</span>
     <span>→</span>
 </a>
 
-<a href="https://www.linkedin.com/in/aqdas-ashraf-19391a297/" class="social">
+<a href="#" class="social">
     <span><i class="fab fa-linkedin"></i> LinkedIn</span>
     <span>→</span>
 </a>
 
-<a href="https://www.youtube.com/@aqdasashraf12" class="social">
+<a href="#" class="social">
     <span><i class="fab fa-youtube"></i> YouTube</span>
     <span>→</span>
 </a>
@@ -275,7 +288,7 @@ class="social" target="_blank">
     <span>→</span>
 </a>
 
-<a href="mailto:aqdascreates@gmail.com" class="social">
+<a href="mailto:yourmail@gmail.com" class="social">
     <span><i class="fa-solid fa-envelope"></i> Email</span>
     <span>→</span>
 </a>
